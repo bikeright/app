@@ -7,8 +7,40 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div id="page_wrapper">
+  <div id="header">
+        <div id="logo_holder">
+      Bike Right
+    </div>
+    <div id="mission">
+      Serving the needs of bicyclists through education, community development, and cooperative property protection
+    </div>
+  </div>
+  <div id="nav.buttons">
+    <ul class="buttons">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="report.html" target="_self">Database</a></li>
+      <li><a href="maps.html" target="_self">Maps</a></li>
+      <li> <a href="resources.html" target="_self">Community</a></li>
+      <li><a href="about.html" target="_self">About Us</a></li>
+      <li><a href="contact.html" target="_self">Contact Us</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <%= yield %>
+  </div>
+  <div id="footer">
+    <ul class="buttons">
+      <li><a href="manage-account.html" target="_self">Manage Account</a></li>
+      <li><a href="site-info.html" target="_self">Site Info</a></li>
+      <li><a href="whats-new.html">What's New</a></li>
+      <li><a href="forums.html" target="_self">Forums</a></li>
+      <li><a href="faq.html" target="_self">FAQ</a></li>
+      <li><a href="privacy-policy.html" target="_self">Privacy Policy</a></li>
+      <li><a href="donate.html" target="_self">Donate</a></li>
+      <li><a href="dev-stuff.html" target="_self">Development</a></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>

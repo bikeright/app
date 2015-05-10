@@ -1,15 +1,89 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background: url(bw_standing.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: small;
+  text-align: left;
+}
+a:link {
+  color: rgba(50,79,0,1);
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgba(50,79,0,1);
+}
+a:hover {
+  text-decoration: underline;
+  color: rgba(137,213,0,1);
+}
+a:active {
+  text-decoration: none;
+  color: rgba(137,213,0,1);
+  font-size: xx-small;
+  text-align: right;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+#page_wrapper {
+  background-color: rgba(250,250,250,.8);
+  width: 85%;
+  margin: auto;
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+#header {
+
+}
+
+#logo_holder {
+  font-family: 'Lobster', cursive;
+  font-size: 650%;
+  text-align: center;
+  font-style: normal;
+  padding: 0px 0px 5px 0px;
+}
+
+#mission {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  text-align: justify;
+  padding-right: 40px;
+}
+
+ul::after {width: 65%; display: inline-block; content: "."; visibility: hidden}
+
+.buttons li {
+  display: inline-block;
+  background-color: rgba(60,60, 61, .6);
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 125%;
+}
+
+.buttons a {
+  color: white;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
